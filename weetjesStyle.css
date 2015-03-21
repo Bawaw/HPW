@@ -1,0 +1,44 @@
+main .nieuwsContainer{
+    color: #555;
+	background-image: url('images/overlay.png');
+}
+
+main .nieuws{
+    margin-top: 70px;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+main .nieuws header{
+    padding-bottom: 2px;
+    background-color: rgba(183,172,208,0.8);
+}
+
+main .nieuws article{
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    border-color: rgba(80,80,80,0.4);
+}
+
+
+main .nieuws h2{
+    font-family: 'Droid Serif', serif;
+    font-size: 36px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+main .nieuws h3{
+    font-style: italic;
+    margin-top: 0px;
+    padding-left: 24px;
+    font-size: 10px;
+}
+
+main .nieuws p{
+    line-height: 25px;
+    padding-left: 20px;
+}

@@ -1,0 +1,304 @@
+body{
+    margin: 0px;
+    background-image: url('images/overlay.png');
+    background-color: #e0e8cc;
+}
+
+.banner{
+    height: 300px;
+    background-size: 100% auto;
+    color: white;
+}
+
+.hoverani{
+   height: 90px;
+   background-color: rgba(255,255,255,0.2);
+   -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out;
+}
+
+.headercontainer{
+    margin: auto;
+    max-width: 1220px;
+}
+
+.banner:hover .hoverani{
+    background-color: rgba(224,232,204,0.6);
+    height: 150px;
+}
+
+.banner:hover li a{
+    color: black;
+}
+
+.banner h1{
+    font-family: sans-serif;
+    vertical-align: top;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.banner h1 img{
+    margin-right: 10px;
+    float: left;
+}
+
+.banner ul{
+    padding-top: 20px;
+    padding-left: 0px;
+    float: right;
+}
+
+.banner nav li{
+    list-style-type: none;
+    float: left;
+}
+
+.banner li a{
+    padding: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    font-size: 18px;
+    border-bottom: 2px solid;
+    background-color: rgba(85,85,85,0.0);
+    border-color: red;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out;
+}
+
+.banner .currentpage a{
+    font-weight: bold;
+    border-color:  #CFB5AB;
+}
+
+.banner li a:hover{
+    padding-bottom: 8px;
+    border-bottom: 0px;
+    background-color: rgba(85,85,85,0.2);
+}
+
+.slideshow li{
+    list-style-type: none;
+}
+
+.slideshow li span { /*geen support <IE9*/
+    font-size: 0;
+    z-index: -1;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+    animation: fadeInAndOut 36s linear infinite 0s;
+    -ms-animation: fadeInAndOut 36s linear infinite 0s;
+    -moz-animation: fadeInAndOut 36s linear infinite 0s;
+    -webkit-backface-visibility: Hidden;
+    -webkit-animation: fadeInAndOut 36s linear infinite 0s;
+    -o-animation: fadeInAndOut 36s linear infinite 0s;    
+}   
+.slideshow li:nth-child(1) span {
+    background-image: url(images/banners/1.JPG)
+}
+
+.slideshow li:nth-child(2) span {
+    background-image: url(images/banners/2.JPG);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.slideshow li:nth-child(3) span {
+    background-image: url(images/banners/3.JPG);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.slideshow li:nth-child(4) span {
+    background-image: url(images/banners/4.JPG);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+}
+
+.slideshow li:nth-child(5) span {
+    background-image: url(images/banners/5.JPG);
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+}
+
+.slideshow li:nth-child(6) span {
+    background-image: url(images/banners/6.JPG);
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}
+
+main{
+    padding-top: 100px;
+}
+
+main .algemeen .embIframe{
+    position: relative;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+}
+
+main .algemeen .embIframe iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 770px){
+    main .algemeen img{
+        top: 0;
+        margin-left: 2%;
+        width:100%;
+        height: auto;
+    }
+    
+    main .algemeen p{
+        font-family: "Georgia","serif";
+        padding-left: 20px;
+        width: 95%;
+    }
+    
+    main .algemeen .tekstcontainer{
+        width: 100%;
+        margin-left: 10px;
+    }
+    
+    footer{
+        padding-top: 40px;
+        height: 350px;
+        background-image: url(images/footer.jpg);  
+    
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: bottom;
+    } 
+    
+}
+
+@media screen and (max-width: 645px){
+        footer article section{
+            display: none;
+        }
+}
+
+@media screen and (max-width: 580px){
+    .banner ul{
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 0px;
+        float: none;
+        margin: auto;
+    }
+
+    .banner nav li{
+        margin-top: 10px;
+        display: inline-block;
+        list-style-type: none;
+        float: none;
+    }
+
+    .banner li a{
+        margin: auto;
+        padding: 0 5px;
+        font-size: 18px;
+        border-bottom: 2px solid;
+        border-color: red;
+        text-decoration: none;
+        color: #fff;
+        -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out;
+    }   
+}
+
+@media screen and (max-width: 440px){
+    .banner{
+        color: black;
+        margin: auto;
+        display: inline-block;
+        background-color: rgba(0,0,0,0.2);
+        text-align: center;
+    }
+    .banner img{
+        display: none;
+    }
+    .banner:hover .hoverani{
+        height: 90px;
+    }
+}
+
+/*Chrome*/
+@-webkit-keyframes fadeInAndOut {
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+    -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/*mozilla*/
+@-moz-keyframes fadeInAndOut {
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+    -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/*opera*/
+@-o-keyframes fadeInAndOut {
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+    -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/*IE*/
+@-ms-keyframes fadeInAndOut {
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+    -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/*safari*/
+@keyframes fadeInAndOut {
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}

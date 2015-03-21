@@ -1,0 +1,89 @@
+main .algemeen{
+    line-height: 30px;
+    max-width: 1220px;
+    margin: auto;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+main .thumb span{
+    position:absolute;
+	visibility:hidden; 
+    left: 50%; top:inherit;
+    margin-left: -800px;
+    margin-top: -600px;
+    width: 50%;
+}
+main .algemeen .photo{
+    margin-bottom: 50px;
+    padding: 10px;
+    padding-top: 0px;
+    margin-left: 70px;
+    float:left;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out;
+}
+
+main .algemeen .photo h1{
+    line-height: 0%;
+}
+main .algemeen .photo h2{
+    line-height: 40%;
+    font-size: 80%;
+    padding: 0px;
+}
+main .algemeen .photo p{
+    line-height: 80%;
+}
+
+main .algemeen .photo:hover{
+    background-color: rgba(255,255,255,1);
+}
+
+main .algemeen .thumb:active,main .algemeen .thumb:active span { 
+	visibility: visible;
+	z-index:1;
+}
+main .algemeen a{
+    color: rgb(85,85,85);
+    border-bottom: 0px solid;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    text-decoration: none;
+    -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out
+}
+
+main .algemeen ul{
+    padding: 0px;
+    margin: 0px;
+    line-height: 60%;
+    
+}
+
+main .algemeen .tekstcontainer{
+    margin-left: 80px;
+}
+
+main .algemeen h2{
+    padding: 20px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+main .algemeen p{
+    font-family: "Georgia","serif";
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 770px){
+   main .algemeen .photo{
+       margin-bottom: 50px;
+        padding: 10px;
+        padding-top: 0px;
+        margin-left: 0px;
+        float:left;
+        background-color: rgba(255,255,255,0.4);
+        -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out;
+   }
+}
